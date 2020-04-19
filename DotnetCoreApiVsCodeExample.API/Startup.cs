@@ -36,6 +36,8 @@ namespace DotnetCoreApiVsCodeExample.API
                 app.UseDeveloperExceptionPage();
             }
 
+            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -46,6 +48,8 @@ namespace DotnetCoreApiVsCodeExample.API
             {
                 endpoints.MapControllers();
             });
+
+            app.UseMiddleware<GlobalExceptionMiddleware>();
         }
     }
 }
