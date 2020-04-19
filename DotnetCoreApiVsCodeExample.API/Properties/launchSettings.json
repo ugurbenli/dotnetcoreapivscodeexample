@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DotnetCoreApiVsCodeExample.API": {
+    "Dev": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
