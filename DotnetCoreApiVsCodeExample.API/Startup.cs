@@ -21,7 +21,7 @@ namespace DotnetCoreApiVsCodeExample.API
         {
             services.AddControllers();
 
-            // Swagger dosyasýný oluþturan service
+            // Swagger dosyasÄ±nÄ± oluÅŸturan service
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DotnetCoreApiVsCodeExample.API", Version = "v1" });
@@ -49,10 +49,10 @@ namespace DotnetCoreApiVsCodeExample.API
 
             app.UseMiddleware<GlobalExceptionMiddleware>();
 
-            // Swagger doküman yapýsý dahil edilmesi
+            // Swagger dokÃ¼man yapÄ±sÄ±nÄ±n dahil edilmesi
             app.UseSwagger();
 
-            // SwaggerGen tarafýndan oluþturulan dokümanýn yorumlanmasý iþleminin dahil edilmesi
+            // SwaggerGen tarafÄ±ndan oluÅŸturulan dokÃ¼manÃ¼n yorumlanmasÄ± iÅŸleminin dahil edilmesi
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "DotnetCoreApiVsCodeExample.API V1");
