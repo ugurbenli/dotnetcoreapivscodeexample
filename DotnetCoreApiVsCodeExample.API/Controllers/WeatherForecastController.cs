@@ -17,8 +17,6 @@ namespace DotnetCoreApiVsCodeExample.API.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get([FromRoute]int a)
         {
-            var b = 5 / a;
-
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
